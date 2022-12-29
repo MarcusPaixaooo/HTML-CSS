@@ -1,0 +1,194 @@
+/*Css configurado para que o site possua duas formas de se padronizar ao reduzir a ela, o tornando responsivo*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #a7a7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    background-color: #f8f8f8ec;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px #0000ce;
+}
+
+.image-form {
+    width: 50%;
+    height: 100%;
+    background-color: #d5d5fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image-form img {
+    width: 90%;
+}
+
+.form-header {
+    margin-bottom: 21px;
+
+}
+
+.form-title-2 {
+    display: none;
+
+}
+
+strong {
+    color: #a7a7ff;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+input:focus {
+    outline: 2px solid #d5d5fd;
+
+}
+
+.inputbox {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inputbox input {
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(212, 212, 212);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+input, label {
+    cursor: pointer;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.entrar input {
+    width: 100%;
+    padding: 10px;
+    background-color: #a7a7ff;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.entrar input:hover {
+    box-shadow: 1px 1px 5px #0000ce;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: 80ms;
+
+
+}
+
+@media (max-width: 980px) {
+
+    .image-form {
+        display: none;
+    }
+
+    .form-title .title-1 {
+        display: none;
+
+    }
+
+    .form-title-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .form-title-2 h1 {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+
+
+    }
+
+    .form-title-2 img {
+        width: 10rem;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .form {
+        width: 100%;
+
+    }
+
+    .entrar input:hover {
+        box-shadow: 1px 1px 5px #0000ce;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        transition: 80ms;
+
+
+    }
+}

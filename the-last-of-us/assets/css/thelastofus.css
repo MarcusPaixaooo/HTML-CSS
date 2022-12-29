@@ -1,0 +1,133 @@
+/*Css definido para que o site possua três configuarções diferentes ao alternar seus tamanhos, 
+alterando desde os posicionamentos de elementos com display flex até a troca de imagens na troca do tamanho da página*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+
+}
+
+@media (max-width: 4000px) {
+    #container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+
+    }
+
+    section {
+        background-color: rgb(14, 12, 12);
+        width: 50%;
+        height: 100%;
+
+    }
+
+    #layout-esquerda {
+        background-image: url(../imgs/CAPA-tlou.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #layout-direita {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    #layout-direita form {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    input {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: none;
+
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: inset 1px 1px 5px black;
+    }
+
+    button {
+        width: 100px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+    }
+
+    picture {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 80%;
+        margin-bottom: 100px;
+        margin: 0 auto;
+
+    }
+    
+}
+
+@media (max-width: 720px) {
+    #layout-esquerda {
+        display: none;
+    }
+
+    #layout-direita {
+        width: 100%;
+        background-image: url(../imgs/c8c96b0b55f1912f27080f0e06c6c8ac.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .logo{
+        width: 50%;
+    }
+   
+}
+
+@media (max-width: 430px) {
+    #layout-esquerda {
+        display: none;
+    }
+
+    #layout-direita {
+        width: 100%;
+        background-image: url(../imgs/TLOU2-ellie.jpg);
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        display: none;
+    }
+}
