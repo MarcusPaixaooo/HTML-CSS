@@ -1,1 +1,1 @@
-Sites básicos, de login, com responsividade.
+Sites de login básicos, com responsividade.
